@@ -1,0 +1,215 @@
+/* General App Styles */
+:root {
+  --color-primary: #e1f80d;
+  --color-white: #ffffff;
+  --color-secondary: #3b9c0d;
+  --color-card: #a0f7a0c0;
+}
+
+
+body {
+  font-family: 'Courier New', Courier, monospace sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+}
+
+/* Navbar improvements */
+.navbar {
+  margin-bottom: 2rem;
+  background-color: var(--color-secondary);
+}
+
+.navbar-brand {
+  color: var(--color-white);
+}
+
+.nav-link {
+  color: var(--color-white) !important;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+  color: var(--color-primary) !important;
+}
+
+/* Card styles */
+.card {
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: var(--color-card)
+}
+
+.card-header {
+  color: white;
+  font-weight: bold;
+  border-bottom: none;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.card-title {
+  color: var(--color-secondary);
+}
+
+/* Form styling */
+form {
+  background-color: var(--color-card);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.form-label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+
+
+.btn-hover:hover{
+  background-color: var(--color-secondary);
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.p-4 {
+  padding: 1.5rem !important;
+}
+
+/* Page specific styling */
+.home-page-welcome {
+  padding: 3rem 1.5rem;
+  background-color: var(--color-card);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.post-item {
+  background-color: var(--color-white);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.post-item:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.post-title {
+  color: var(--color-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.post-meta {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+.post-content {
+  color: #495057;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.875em;
+}
+
+/* Profile page specific styles */
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+  display: block;
+  border: 3px solid #007bff;
+}
+
+.profile-details dt {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.profile-details dd {
+  margin-bottom: 0.5rem;
+  color: #495057;
+}
+
+/* Single Post Page */
+.single-post-title {
+  color: #007bff;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.single-post-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #343a40;
+}
+
+.single-post-sections .card {
+  margin-top: 1.5rem;
+}
+
+.single-post-sections .card-header {
+  font-size: 1.2rem;
+}
+
+.single-post-sections .card-body {
+  font-size: 1rem;
+  color: #495057;
+}
+
+/* Create/Edit Post Form */
+.create-post-form .form-label, .edit-post-form .form-label {
+    font-weight: bold;
+}
+
+.create-post-form .btn-primary, .edit-post-form .btn-primary {
+    margin-top: 1rem;
+}
+
+.create-post-form .section-form {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e9ecef;
+}
+
+.create-post-form .section-form h5 {
+    margin-bottom: 1rem;
+    color: #007bff;
+}
